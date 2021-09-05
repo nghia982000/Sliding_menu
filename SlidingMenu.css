@@ -1,0 +1,59 @@
+*,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ebebeb;
+	font-family: 'Fira Sans',sans-serif;
+}
+.main_menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 70px;
+	background-color: #fff;
+	border-top-right-radius: 10px;/* bo tròn góc*/
+	border-bottom-right-radius: 10px;
+	overflow: hidden;/* cắt phần thừa ra ngoài viền */
+	white-space: nowrap;/* dưa về 1 hàng*/
+	box-shadow: 0px 0px 20px #d4d4d4;
+	transition: .3s ease;
+
+}
+.main_menu:hover{
+	width: 270px; 
+	overflow-y: scroll;
+}
+.main_menu .menu_item{
+	padding: 10px;
+}
+.main_menu .menu_item:hover{
+	background-color: #d6d6d6;
+	cursor: pointer;/* chuyển mũi ten thành bàn tay*/
+
+}
+.main_menu .menu_item:hover > .fa{
+	color: blue;
+}
+.main_menu .menu_item .fa{
+	font-size: 25px;
+	width: 40px;
+	padding: 10px;
+	color: gray;
+}
+/* chỉnh thanh kéo*/
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background: transparent !important;
+
+}
+::-webkit-scrollbar-thumb{
+	background: #bbbbbb;
+	border-radius: 10px;
+}
+section#home{
+	background-color: #f3f3f3;
+}
